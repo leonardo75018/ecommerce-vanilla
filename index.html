@@ -17,39 +17,56 @@
                     <img src="https://images.unsplash.com/photo-1567433517180-d3e56cf7f81e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Produit 1</h5>
+                      <p class="lead">100€</p>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <button type="button" class="btn btn-primary" data-product="Product1">Ajouter</button>
+                      <button type="button" class="btn btn-primary" data-product="Product1" data-price="100">Ajouter</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="https://images.unsplash.com/photo-1556227834-09f1de7a7d14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Produit 2</h5>
+                      <p class="lead">200€</p>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <button type="button" class="btn btn-primary"  data-product="Product2">Ajouter</button>
+                      <button type="button" class="btn btn-primary"  data-product="Product2" data-price="200">Ajouter</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Produit 3</h5>
+                      <p class="lead">300€</p>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <button type="button" class="btn btn-primary"  data-product="Product3" >Ajouter</button>
+                      <button type="button" class="btn btn-primary"  data-product="Product3" data-price="300" >Ajouter</button>
                     </div>
                 </div>
         </section>
     </main>
 
     <section class="container mt-3">
-        <ul class="list-group" id="card">
-            
-        </ul>
+        <ul class="list-group" id="card"> </ul>
     </section>
     
+    <footer id="footer" class="container mt-3" >
+      <template id="templateFooter">
+        
+      </template>
+    </footer>
+
     <template id="template">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item bg-secondary text-white">
             <span class="lead">Produit 1</span>
-            <span class="badge bg-primary rounded-pill">12</span>
+            <span class="badge bg-primary rounded-pill align-middle">12</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+                <p class="lead mb-0">Total: <span>200</span>€</p>
+            </div>
+            <div>
+                <button class="btn btn-sm btn-success">Agregar</button>
+                <button class="btn btn-sm btn-danger">Quitar</button>
+            </div>
         </li>
     </template>
 
